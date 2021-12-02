@@ -1,175 +1,369 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
 <head>
+    <script src="js.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW02_Web</title>
 </head>
 <body>
-    <div title="navbar">
-        <div>
-            <a href="#Header">بخش اول</a>
-            <a href="#Cards">بخش دوم</a>
-            <a href="#Gallery">بخش سوم</a>
-            <a href="#Activities">بخش چهارم</a>
-            <a href="#Contact_us">بخش پنجم</a>
-        </div>
-        <div dir="ltr">
-            <input type="button", value="لوگو">
-        </div>
-    </div>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
+    <!--    <div class="container">-->
+    <div class="justify-content-end">
 
-    <div id="Header">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse justify-content-start" id="mynavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#Header">بخش اول</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Cards">بخش دوم</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Gallery">بخش سوم</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Activities">بخش چهارم</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Contact_us">بخش پنجم</a>
+            </li>
+        </ul>
+    </div>
+    <form class="d-flex">
+        <a class="navbar-brand" href="javascript:void(0)">
+            <img src="files/blue_logo_200x200.png" alt="logo" style="width:40px;">
+        </a>
+        <button class="btn btn-primary" type="button">حالت تاریک</button>
+    </form>
+</nav>
+<div class="wave" id="wave_image">
+    <div>
         <h1>لورم ایپسوم</h1>
         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از</p>
-        <button>لورم</button>
     </div>
-    
-    <div id="Cards">
-        <h2>کارت اعضا</h2>
-        <div title="card1">
-            <div title="topCard">
-                <h5>97101213</h5>
-                <h3>امیرمحمد محمدی</h3>
-                <p>مهندسی کامپیوتر - شریف - ۹۷</p>
-            </div>
-            <div title="bodyCard">
-                <p>all of our skills</p>
-                <p>all of our skills</p>
-                <p>all of our skills</p>
-                <p>all of our skills</p>
-                <button>LinkedIn</button>
-            </div>
+</div>
+<div id="Header">
+    <h1>لورم ایپسوم</h1>
+    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از</p>
+    <button onclick="change_gradiant()">لورم</button>
+</div>
+<div class="row" id="Cards">
+    <div class="card" style="width:300px;">
+        <div class="mt-4 p-5 bg-primary text-white rounded bg-warning">
+            <h1>1Jumbotron Example</h1>
+            <p>Lorem ipsum...</p>
         </div>
-        <div title="card2">
-            <div title="topCard">
-                <p>مهم</p>
-                <h5>97101213</h5>
-                <h3>سجاد فقفور مغربی</h3>
-                <p>مهندسی کامپیوتر - شریف - ۹۷</p>
-            </div>
-            <div title="bodyCard">
-                <p>all of our skills</p>
-                <p>all of our skills</p>
-                <p>all of our skills</p>
-                <p>all of our skills</p>
-                <button>LinkedIn</button>
-            </div>
+        <div class="card-body" style="text-align: center;">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
         </div>
-        <div title="card3">
-            <div title="topCard">
-                <h5>97101213</h5>
-                <h3>محمد نامدار</h3>
-                <p>مهندسی کامپیوتر - شریف - ۹۷</p>
-            </div>
-            <div title="bodyCard">
-                <p>all of our skills</p>
-                <p>all of our skills</p>
-                <p>all of our skills</p>
-                <p>all of our skills</p>
-                <button>LinkedIn</button>
-            </div>
+    </div>
+    <div class="card" style="width:400px;">
+        <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h1>2Jumbotron Example</h1>
+            <p>Lorem ipsum...</p>
         </div>
-        <br>
-        <br>
+        <div class="card-body" style="text-align: center;">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+    </div>
+    <div class="card" style="width:300px;">
+        <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h1>3Jumbotron Example</h1>
+            <p>Lorem ipsum...</p>
+        </div>
+        <div class="card-body" style="text-align: center;">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+    </div>
+</div>
+<div>
+    <h2>کارت اعضا</h2>
+    <div title="card1">
+        <div title="topCard">
+            <h5>97101213</h5>
+            <h3>امیرمحمد محمدی</h3>
+            <p>مهندسی کامپیوتر - شریف - ۹۷</p>
+        </div>
+        <div title="bodyCard">
+            <p>all of our skills</p>
+            <p>all of our skills</p>
+            <p>all of our skills</p>
+            <p>all of our skills</p>
+            <button>LinkedIn</button>
+        </div>
+    </div>
+    <div title="card2">
+        <div title="topCard">
+            <p>مهم</p>
+            <h5>97101213</h5>
+            <h3>سجاد فقفور مغربی</h3>
+            <p>مهندسی کامپیوتر - شریف - ۹۷</p>
+        </div>
+        <div title="bodyCard">
+            <p>all of our skills</p>
+            <p>all of our skills</p>
+            <p>all of our skills</p>
+            <p>all of our skills</p>
+            <button>LinkedIn</button>
+        </div>
+    </div>
+    <div title="card3">
+        <div title="topCard">
+            <h5>97101213</h5>
+            <h3>محمد نامدار</h3>
+            <p>مهندسی کامپیوتر - شریف - ۹۷</p>
+        </div>
+        <div title="bodyCard">
+            <p>all of our skills</p>
+            <p>all of our skills</p>
+            <p>all of our skills</p>
+            <p>all of our skills</p>
+            <button>LinkedIn</button>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+<div class="row img_row" id="Gallery">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 container">
+        <img
+                src="https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/528ba39fe4b0608d85e1aa59/1384883113325/816_max.jpg"
+                class=" img"
+                alt=""
+        />
+        <div class="overlay">
+            <div class="text">Hello World</div>
+        </div>
     </div>
 
-    <div id="Gallery">
-        <img src="https://news.fox-24.com/entertainment/temp/resized/medium_2021-11-01-84bdd63ba3.jpg" alt="Image Not Found!">
-        <img src="https://th.bing.com/th/id/R.4e2aa014811407448b02c203e079ecdc?rik=WBUN6kExk9R37A&pid=ImgRaw&r=0" alt="Image Not Found!">
-        <img src="https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/528ba39fe4b0608d85e1aa59/1384883113325/816_max.jpg" alt="Image Not Found!">
-        <img src="https://th.bing.com/th/id/R.183fe68dbde4bef8deb562403d653ac6?rik=Z3HPh8yHbXjOfw&riu=http%3a%2f%2ficrontic.com%2fuploads%2ffeatures%2fgaming%2f2010%2f07%2f21103Nightly-Clash.jpg&ehk=Z1LVmg9c5tzBOG1ERP0LAfgqKEJqs%2fruD86rz5BOuk8%3d&risl=&pid=ImgRaw&r=0" alt="Image Not Found!">
-        <img src="https://th.bing.com/th/id/OIP.0kKXoDsGCQg5OJ5UmOWYbwHaH3?pid=ImgDet&rs=1" alt="Image Not Found!">
-        <!-- how to implement image description
-        empty div + background image -->
+    <div class="col-lg-4 mb-4 mb-lg-0 container"
+         style="align-items: center"
+    >
+        <img
+                src="https://news.fox-24.com/entertainment/temp/resized/medium_2021-11-01-84bdd63ba3.jpg"
+                class="w-100 shadow-1-strong rounded mb-4 img"
+                alt=""
+        />
+        <div class="overlay">
+            <div class="text">Hello World</div>
+        </div>
     </div>
 
-    <div id="Activities">
-        <div title="job1">
-            <h3>فعالیت های اصلی</h3>
-            <p>random B.S. random B.S. random B.S. random B.S. random B.S.</p>
-            <p><a href="https://www.google.com">اطلاعات بیشتر</a> </p>
-            <div>
-                <img src="" alt="Image Not Found!">
-                <img src="" alt="Image Not Found!">
-            </div>
+    <div class="col-lg-4 mb-4 mb-lg-0 container">
+        <img
+                src="https://th.bing.com/th/id/R.4e2aa014811407448b02c203e079ecdc?rik=WBUN6kExk9R37A&pid=ImgRaw&r=0"
+                class="w-100 shadow-1-strong rounded mb-4 img"
+                alt=""
+        />
+        <div class="overlay">
+            <div class="text">Hello World</div>
         </div>
-        <div title="job2">
-            <h3>لورم ایپسوم</h3>
-            <p> more random B.S. more random B.S. more random B.S. more random B.S. more random B.S.</p>
-            <p><a href="https://www.google.com">اطلاعات بیشتر</a> </p>
-            <div>
-                <img src="" alt="Image Not Found!">
-                <img src="" alt="Image Not Found!">
-                <br>
-                <br>
-            </div>
+    </div>
+</div>
+<div class="row img_row">
+    <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 container">
+        <img
+                src="https://th.bing.com/th/id/R.183fe68dbde4bef8deb562403d653ac6?rik=Z3HPh8yHbXjOfw&riu=http%3a%2f%2ficrontic.com%2fuploads%2ffeatures%2fgaming%2f2010%2f07%2f21103Nightly-Clash.jpg&ehk=Z1LVmg9c5tzBOG1ERP0LAfgqKEJqs%2fruD86rz5BOuk8%3d&risl=&pid=ImgRaw&r=0"
+                class="w-100 shadow-1-strong rounded mb-4 img"
+                alt=""
+        />
+        <div class="overlay">
+            <div class="text">Hello World</div>
         </div>
-        <br>
-        <br>
     </div>
 
-    <div id="Contact_us">
-        <div> با ما <span><strong> در ارتباط </strong></span> باشید </div>
+    <div class="col-lg-6 mb-4 mb-lg-0 container"
+    >
+        <img
+                src="https://cdn.onebauer.media/one/empire-tmdb/films/157336/images/xu9zaAevzQ5nnrsXN6JcahLnG4i.jpg?format=jpg&quality=80&width=960&height=540&ratio=16-9&resize=aspectfill"
+                class="w-100 shadow-1-strong rounded mb-4 img"
+                alt=""
+        />
+        <div class="overlay">
+            <div class="text">Hello World</div>
+        </div>
+    </div>
+</div>
+
+<div id="Activities">
+    <div title="job1">
+        <h3>فعالیت های اصلی</h3>
+        <p>random B.S. random B.S. random B.S. random B.S. random B.S.</p>
+        <p><a href="https://www.google.com">اطلاعات بیشتر</a></p>
         <div>
-        <a href="https://www.instagram.com/" target="_blank">
-            <img src="https://www.asus.com/media/odin/websites/global/SocialMedia/social-Instagram.svg" alt="Instagram">
-        </a>
-        <a href="https://twitter.com/" target="_blank">
-            <img src="https://www.asus.com/media/odin/websites/global/SocialMedia/social-Twitter.svg" alt="Twitter">
-        </a>
-        <a href="https://www.linkedin.com/" target="_blank">
-            <img src="https://www.asus.com/media/odin/websites/global/SocialMedia/social-LinkedIn.svg" alt="LinkedIn">
-        </a>
+            <img src="" alt="Image Not Found!">
+            <img src="" alt="Image Not Found!">
         </div>
-        <br>
-        <br>
     </div>
-
-    <div title="comments">
-        <h3>نظرات مشتریان</h3>
-        <!--Automatic(2s) slide Show -->
-        <input type="button" value="right">
-        <input type="button" value="left">
-        <div title="slide1">
-            <img src="" alt="costum image">
-            <p>B.S. Comments B.S. Comments B.S. Comments B.S. Comments B.S. Comments B.S. Comments </p>
-        </div>
-        <div title="slide2">
-            <img src="" alt="costum image">
-            <p>B.S. Comments B.S. Comments B.S. Comments B.S. Comments B.S. Comments B.S. Comments </p>
-        </div>
-        <div title="slide3">
-            <img src="" alt="costum image">
-            <p>B.S. Comments B.S. Comments B.S. Comments B.S. Comments B.S. Comments B.S. Comments </p>
-        </div>
-        <br>
-        <br>
-    </div>
-
-    <div title="news">
-        <h4>خبرنامه</h4>
-        <input type="text" name="first name" placeholder="نام">
-        <input type="text" name="last name" placeholder="نام خانوادگی">
-        <input type="text" name="email" placeholder="ایمیل">
-        <input type="button" value="ثبت">
+    <div title="job2">
+        <h3>لورم ایپسوم</h3>
+        <p> more random B.S. more random B.S. more random B.S. more random B.S. more random B.S.</p>
+        <p><a href="https://www.google.com">اطلاعات بیشتر</a></p>
         <div>
+            <img src="" alt="Image Not Found!">
+            <img src="" alt="Image Not Found!">
+            <br>
+            <br>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+<div class="row" style="background-color: black">
+    <!--    <div class="col-lg-6 col-md-6 col-sm-6 col-6" style="padding: 70px 0; text-align: center; background-color: aqua;">-->
+    <!--        asflajf;lijfa-->
+    <!--    </div>-->
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style=" text-align: center; padding: 70px 0;">
+        <a href="https://www.instagram.com/" target="_blank" class="sm-logo">
+            <img src="https://www.asus.com/media/odin/websites/global/SocialMedia/social-Instagram.svg" class="sm-logo"
+                 alt="Instagram">
+        </a>
+        <br>
+        <a href="https://twitter.com/" target="_blank" class="sm-logo">
+            <img src="files/red_logo_200x200.png" class="sm-logo huerotate" alt="Twitter">
+        </a>
+        <br>
+        <a href="https://www.linkedin.com/" target="_blank" class="sm-logo">
+            <img src="https://www.asus.com/media/odin/websites/global/SocialMedia/social-LinkedIn.svg" class="sm-logo"
+                 alt="LinkedIn" style="filter:invert(50%);">
+        </a>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12"
+         style="padding: 100px 0;  vertical-align: middle; text-align: center;">
+        <p class="ca-text" style="color:white;">
+            با ما
+        </p>
+        <p class="ca-text ca-text-hover" style="color: yellow">
+            در ارتباط
+        </p>
+        <p class="ca-text" style="color: white;">
+            باشید
+        </p>
+    </div>
+</div>
+<div id="Contact_us" class="bg-dark row">
+    <div style="background-color: aqua">
+
+    </div>
+    <div style="background-color: antiquewhite">
+
+    </div>
+</div>
+<div id="comments" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#comments" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#comments" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#comments" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner "
+         style="align-items: center; align-content: center; text-align: center; background-color: gray;">
+
+        <div class="carousel-item active div-slideshow" style="">
+            <div class=" row border border-5 " style="; align-items: center">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12   rounded "
+                     style="align-items: center; padding: 10% 10%;">
+                    <img class="rounded"
+                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUWJlxT1pTiuC_x6CWfIok_5rv-AwsLhBAiw&usqp=CAU"
+                         alt="" style="width: 100%; height: 100%;">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="text-align: center;padding: 10% 10%;">
+                    <p class="card-text">Some example text.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item div-slideshow" style="">
+            <div class=" row border border-5 " style="; align-items: center">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12   rounded "
+                     style="align-items: center; padding: 10% 10%;">
+                    <img class="rounded"
+                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUWJlxT1pTiuC_x6CWfIok_5rv-AwsLhBAiw&usqp=CAU"
+                         alt="" style="width: 100%; height: 100%;">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="text-align: center;padding: 10% 10%;">
+                    <p class="card-text">Some example text.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item div-slideshow" style="">
+            <div class=" row border border-5 " style="; align-items: center">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12   rounded "
+                     style="align-items: center; padding: 10% 10%;">
+                    <img class="rounded"
+                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUWJlxT1pTiuC_x6CWfIok_5rv-AwsLhBAiw&usqp=CAU"
+                         alt="" style="width: 100%; height: 100%;">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="text-align: center;padding: 10% 10%;">
+                    <p class="card-text">Some example text.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#comments" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#comments" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+
+<div class="row" style="margin-right:30%; margin-left: 30%;background-color: aqua" title="news">
+    <h4>خبرنامه</h4>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-12 form-mem">
+        <input type="email" class="form-control" id="name" placeholder="نام" name="email">
+
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-12 form-mem">
+        <input type="email" class="form-control" id="fam-name" placeholder="نام خانوادگی" name="email">
+
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-12 form-mem">
+        <input type="email" class="form-control" id="email" placeholder="ایمیل" name="email">
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-12 form-mem">
+        <button type="submit" class="btn btn-primary">ثبت</button>
+    </div>
+    <div>
         <!-- modal ﯾﺎ pop-up -->
         <p>Are you sure you want to do this</p>
         <input type="button" value="Yes">
         <input type="button" value="No">
-        </div>
-        <div>
+    </div>
+    <div>
         <!-- toast -->
-            <p>عملیات موفقیت آمیز بود</p>
-        </div>
+        <p>عملیات موفقیت آمیز بود</p>
     </div>
+</div>
 
-    <div title="footer">
-        <h4><br>BigFive</h4>
-        <p>randomEmail@gmail.com</p>
-        
-    </div>
+<div title="footer">
+    <h4><br>BigFive</h4>
+    <p>randomEmail@gmail.com</p>
+
+</div>
 </body>
 </html>

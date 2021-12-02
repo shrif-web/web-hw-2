@@ -1,0 +1,128 @@
+.wave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: linear-gradient(to bottom, sandybrown, chocolate);*/
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url("files/ITOpsKanban.jpg");
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    flex-direction: column;
+    text-align: center;
+    /*align-items: flex-end;*/
+    /*padding-right: 10%;*/
+}
+
+.wave::before,
+.wave::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat-x;
+}
+
+.wave::before {
+    height: 10px;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+
+.wave::after {
+    height: 15px;
+    background-size: 40px 20px;
+    background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /*height: 200px;*/
+    /*width: 200px;*/
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+}
+
+.container:hover .overlay {
+    opacity: 0.75;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img_row {
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+.hover-img {
+    transition: all 0.4s ease-in;
+}
+
+.hover-img:hover {
+    margin-top: -50px;
+}
+
+.hover-img:hover {
+    /*background: black;*/
+}
+.ca-text{
+text-align: center;
+padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.ca-text-hover:hover{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sm-logo{
+    padding: 5px;
+}
+.sm-logo:hover{
+    filter: hue-rotate(180deg);
+    -webkit-filter: hue-rotate(180deg);
+    /*background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));*/
+}
+.huerotate {
+    filter: hue-rotate(200deg);
+    -webkit-filter: hue-rotate(30deg);
+}
+.div-slideshow{
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+.form-mem{
+ /*margin-left: 10px;*/
+ /*margin-right: 10px;*/
+}
