@@ -29,7 +29,7 @@
 .wave::before {
     height: 10px;
     background-size: 20px 20px;
-    background-image: radial-gradient(circle at 10px -px, transparent 12px, white 13px);
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
 }
 
 .wave::after {
@@ -84,6 +84,13 @@
     /* Persian Font */
     font-family: 'pFont';
     src: url(./font/BN.ttf);
+    unicode-range: U+0600-06FF;
+}
+
+@font-face {
+    /* Persian Font */
+    font-family: 'eFont';
+    src: url(./font/SL.ttf);
     unicode-range: U+0600-06FF;
 }
 
@@ -237,6 +244,12 @@
     border-top: solid white 50px;
     position: absolute;
     top: 0;
+}
+
+.center {
+    background-color: rgb(83, 94, 109);
+    border-color: rgb(83, 94, 109);
+    text-align: center;
 }
 
 .slide-card {
