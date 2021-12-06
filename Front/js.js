@@ -25,6 +25,5 @@ function small_gallery() {
 
     }
 }
-
 small_gallery()
 window.onresize = small_gallery
