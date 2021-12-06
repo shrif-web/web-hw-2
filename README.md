@@ -1,5 +1,5 @@
 # project 2
-To serve on localhost:8888 run bellow command
+To serve on localhost:8888 run the following command
 ``` bash
 docker run -it --rm -d -p 8888:80 --name web -v\
 /path/to/Front:/usr/share/nginx/html nginx
