@@ -5,7 +5,7 @@
     /*background: linear-gradient(to bottom, sandybrown, chocolate);*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url("../files/ITOpsKanban.jpg");
+    background-image: linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url("./files/ITOpsKanban.jpg");
     height: 200px;
     position: relative;
     margin-bottom: 20px;
