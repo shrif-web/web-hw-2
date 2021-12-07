@@ -7,7 +7,7 @@ function change_gradiant() {
 
 function toast() {
     var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-    var toastList = toastElList.map(function(toastEl) {
+    var toastList = toastElList.map(function (toastEl) {
         return new bootstrap.Toast(toastEl)
     })
     toastList.forEach(toast => toast.show())
@@ -25,6 +25,32 @@ function small_gallery() {
 
     }
 }
+dark = false
+function toggle_dark_mode() {
+    let x;
+    const classes = ["body", "Cards", "card-body","wave","card-btn","contact-us","arrow-up","comment-body","news","news-input"]
+    if (dark === false) {
+        for (let j = 0; j < classes.length; j++) {
+            x = document.getElementsByClassName(classes[j]);
+            console.log(x)
+            for (i = 0; i < x.length; i++) {
+                console.log(i)
+                x[i].className += " dark-scheme"
+            }
+        }
+        dark = true
+    } else {
+        for (let j = 0; j < classes.length; j++) {
+            x = document.getElementsByClassName(classes[j]);
+            console.log(x)
+            for (i = 0; i < x.length; i++) {
+                console.log(x[i].className)
+                x[i].className = x[i].className.replace("dark-scheme", "")
+            }
 
-small_gallery()
-window.onresize = small_gallery
+        }
+        dark = false
+    }
+}
+    small_gallery()
+    window.onresize = small_gallery;

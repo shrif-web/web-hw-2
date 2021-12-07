@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW02_Web</title>
 </head>
-<body class="dark-scheme">
+<body class="body" >
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
     <!--    <div class="container">-->
     <div class="justify-content-end">
@@ -45,31 +45,31 @@
         <a class="navbar-brand" href="javascript:void(0)">
             <img src="./files/blue_logo_200x200.png" alt="logo" style="width:60px;">
         </a>
-        <button class="btn btn-primary" type="button" style="font-size:0.9em">حالت تاریک</button>
+        <button class="btn btn-primary" type="button" style="font-size:0.9em" onclick="toggle_dark_mode()">حالت تاریک</button>
     </form>
 </nav>
-<div style="font-family: pFont;" class="wave dark-scheme" id="wave_image">
+<div style="font-family: pFont;" class="wave" id="wave_image">
     <div>
         <h1>لورم ایپسوم</h1>
         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از</p>
         <button class="btn btn-close-black" onclick="change_gradiant()" style="font-size: 1.2em">لورم</button>
     </div>
 </div>
-<div class="card-flex dark-scheme" id="Cards" style="font-family: pFont">
+<div class="card-flex Cards" id="Cards" style="font-family: pFont">
     <div class="card my-card" style="">
         <div  class="mt-4 p-5 text-white rounded " style="margin: 0!important; background-color: #0033ff">
             <h5>۹۷۱۰۰۰۰۰</h5>
             <h3>امیرمحمد محمدی</h3>
             <p>مهندسی کامپیوتر - شریف - ۹۷</p>
         </div>
-        <div class="card-body dark-scheme" style="text-align: center;">
+        <div class="card-body" style="text-align: center;">to
             <ul style=" display:flex; flex-direction: column; margin: 5px; list-style: square inside url('./files/arrow-left-icon-256-1421005080-5.png');">
                 <li class="card-list">لورم ایپسوم لورم </li>
                 <li class="card-list">لورم ایپسوم لورم </li>
                 <li class="card-list">لورم ایپسوم لورم </li>
                 <li class="card-list">لورم ایپسوم لورم </li>
             </ul>
-            <a href="#" style="width: 80%;" class="btn btn-info card-btn dark-scheme">بازدید از پروفایل</a>
+            <a href="#" style="width: 80%;" class="btn btn-info card-btn">بازدید از پروفایل</a>
         </div>
     </div>
     <div class="card my-card" style=" height: 120%;">
@@ -82,7 +82,7 @@
             <p>مهندسی کامپیوتر - شریف - ۹۷</p>
             <p></p>
         </div>
-        <div class="card-body dark-scheme" style="text-align: center;">
+        <div class="card-body" style="text-align: center;">
             <ul style=" display:flex; flex-direction: column; margin: 5px; list-style: square inside url('./files/arrow-left-icon-256-1421005080-5.png');">
                 <p></p>
                 <li class="card-list">لورم ایپسوم لورم </li>
@@ -91,7 +91,7 @@
                 <li class="card-list">لورم ایپسوم لورم </li>
                 <p></p>
             </ul>
-            <a href="#" style="width: 80%;" class="btn btn-info card-btn dark-scheme">بازدید از پروفایل</a>
+            <a href="#" style="width: 80%;" class="btn btn-info card-btn">بازدید از پروفایل</a>
         </div>
     </div>
     <div class="card my-card" style="">
@@ -100,14 +100,14 @@
             <h3>محمد نامدار</h3>
             <p>مهندسی کامپیوتر - شریف - ۹۷</p>
         </div>
-        <div class="card-body dark-scheme" style="text-align: center; font-family: pFont">
+        <div class="card-body" style="text-align: center; font-family: pFont">
             <ul style=" display:flex; flex-direction: column; margin: 5px; list-style: square inside url('./files/arrow-left-icon-256-1421005080-5.png');">
                 <li class="card-list">لورم ایپسوم لورم </li>
                 <li class="card-list">لورم ایپسوم لورم </li>
                 <li class="card-list">لورم ایپسوم لورم </li>
                 <li class="card-list">لورم ایپسوم لورم </li>
             </ul>
-            <a href="#" style="width: 80%;" class="btn btn-info card-btn dark-scheme">بازدید از پروفایل</a>
+            <a href="#" style="width: 80%;" class="btn btn-info card-btn">بازدید از پروفایل</a>
         </div>
     </div>
 </div>
@@ -258,9 +258,9 @@
     </div>
 </div>
 
-<div  class="my-row contact-us dark-scheme" style="">
+<div  class="my-row contact-us" style="">
     <!--    <div style="position: absolute; background: red; width: 100%; height: 100%"></div>-->
-    <div class="arrow-up dark-scheme" style="">
+    <div class="arrow-up" style="">
 
     </div>
     <div class="arrow-down" style="">
@@ -361,42 +361,42 @@
          style="align-items: center; align-content: center; text-align: center; font-family: pFont">
 
         <div class="carousel-item active div-slideshow" style="">
-            <div class=" row rounded border border-5 slide-card comment-body dark-scheme" style="">
+            <div class=" row rounded border border-5 slide-card comment-body" style="">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12   rounded "
                      style="align-items: center; padding: 10% 10%;">
                     <img class="rounded"
                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUWJlxT1pTiuC_x6CWfIok_5rv-AwsLhBAiw&usqp=CAU"
                          alt="" style="width: 100%; height: 100%;">
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12 comment-body dark-scheme" style="text-align: center;padding: 10% 10%;">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 comment-body" style="text-align: center;padding: 10% 10%;">
                     <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمااده قرار گیرد.</p>
 
                 </div>
             </div>
         </div>
         <div class="carousel-item div-slideshow" style="">
-            <div class=" row rounded border border-5 slide-card comment-body dark-scheme" style="">
+            <div class=" row rounded border border-5 slide-card comment-body" style="">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12   rounded "
                      style="align-items: center; padding: 10% 10%;">
                     <img class="rounded"
                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUWJlxT1pTiuC_x6CWfIok_5rv-AwsLhBAiw&usqp=CAU"
                          alt="" style="width: 100%; height: 100%;">
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12 comment-body dark-scheme" style="text-align: center;padding: 10% 10%;">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 comment-body" style="text-align: center;padding: 10% 10%;">
                     <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمااده قرار گیرد.</p>
 
                 </div>
             </div>
         </div>
         <div class="carousel-item div-slideshow" style="border-radius: 10px;">
-            <div class=" row rounded border border-5 slide-card comment-body dark-scheme" style="">
+            <div class=" row rounded border border-5 slide-card comment-body" style="">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12   rounded "
                      style="align-items: center; padding: 10% 10%;">
                     <img class="rounded"
                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUWJlxT1pTiuC_x6CWfIok_5rv-AwsLhBAiw&usqp=CAU"
                          alt="" style="width: 100%; height: 100%;">
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12 comment-body dark-scheme" style="text-align: center;padding: 10% 10%;">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 comment-body" style="text-align: center;padding: 10% 10%;">
                     <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمااده قرار گیرد.</p>
 
                 </div>
@@ -413,21 +413,21 @@
     </button>
 </div>
 
-<div class="row rounded relative news dark-scheme"
+<div class="row rounded relative news"
      id="rel2"
 
      title="news">
     <h4 class="form-mem">خبرنامه</h4>
     <div class="col-lg-3 col-md-3 col-sm-9 col-9 form-mem">
-        <input type="email" class="form-control news-input dark-scheme" id="name" placeholder="نام" name="email">
+        <input type="email" class="form-control news-input" id="name" placeholder="نام" name="email">
 
     </div>
     <div class="col-lg-3 col-md-3 col-sm-9 col-9 form-mem">
-        <input type="email" class="form-control news-input dark-scheme" id="fam-name" placeholder="نام خانوادگی" name="email">
+        <input type="email" class="form-control news-input" id="fam-name" placeholder="نام خانوادگی" name="email">
 
     </div>
     <div class="col-lg-3 col-md-3 col-sm-9 col-9 form-mem">
-        <input type="email" class="form-control news-input dark-scheme" id="email" placeholder="ایمیل" name="email">
+        <input type="email" class="form-control news-input" id="email" placeholder="ایمیل" name="email">
     </div>
     <div class="col-lg-3 col-md-3 col-sm-9 col-9 form-mem">
         <button data-bs-toggle="modal" data-bs-target="#myModal" type="submit" class="btn btn-primary"
