@@ -273,7 +273,7 @@
 }
 
 .card-list {
-    margin: auto!important;
+    margin: auto !important;
     /*line-height: 50px;*/
     text-align: center;
     vertical-align: middle;
@@ -342,4 +342,9 @@ body {
         display: flex;
         flex-direction: column;
     }
+}
+
+.borderColor {
+    border-color: #aa7700;
+    background-color: #FFFFFF;
 }
