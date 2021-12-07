@@ -134,6 +134,8 @@
 .ca-text-hover:hover {
     margin-top: 10px;
     margin-bottom: 10px;
+    /* transition-delay: 1s; */
+    transition: 0.6s ease;
 }
 
 .sm-logo {
